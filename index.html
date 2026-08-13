@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d9fff9">
+  <title>Mis 15 Años | Daniela</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="cover" id="inicio">
+      <div class="cover-card">
+        <p class="eyebrow">Una noche para recordar</p>
+        <h1>Daniela</h1>
+        <p class="subtitle">Mis 15 Años</p>
+        <p class="date">03 · 10 · 2026</p>
+        <button class="open-btn" id="openInvitation">Abrir invitación</button>
+      </div>
+    </section>
+
+    <section class="section intro" id="invitacion">
+      <p class="eyebrow">Con mucha ilusión</p>
+      <h2>Te invito a celebrar conmigo</h2>
+      <p>
+        Hoy doy gracias a Dios y a mis padres por concederme la ilusión
+        más grande de mi vida, y a ustedes, por compartir conmigo este
+        día tan especial e inolvidable.
+      </p>
+      <p class="signature">Daniela</p>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="eyebrow">La cuenta regresiva comienza</p>
+      <div class="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Minutos</span></div>
+        <div><strong id="seconds">00</strong><span>Segundos</span></div>
+      </div>
+      <p id="countdownMessage" class="countdown-message"></p>
+    </section>
+
+    <section class="section details">
+      <div class="detail-card">
+        <span class="icon">📅</span>
+        <h3>Fecha</h3>
+        <p>Sábado 3 de octubre de 2026</p>
+      </div>
+      <div class="detail-card">
+        <span class="icon">🕗</span>
+        <h3>Recepción</h3>
+        <p>8:30 p. m.</p>
+      </div>
+      <div class="detail-card">
+        <span class="icon">📍</span>
+        <h3>Lugar</h3>
+        <p>Club Caza, Pesca y Tiro<br>Salón, 2.º piso</p>
+        <a class="link-btn" href="https://www.google.com/maps/search/?api=1&query=Club+Caza+Pesca+y+Tiro" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </section>
+
+    <section class="section itinerary">
+      <p class="eyebrow">Itinerario</p>
+      <h2>Una noche especial</h2>
+      <div class="timeline">
+        <div><time>8:00 p. m.</time><span>Llegada de invitados</span></div>
+        <div><time>9:00 p. m.</time><span>Fotos</span></div>
+        <div><time>9:15 p. m.</time><span>Vals</span></div>
+        <div><time>10:00 p. m.</time><span>Cena</span></div>
+        <div><time>11:00 p. m.</time><span>Fiesta</span></div>
+        <div><time>2:00 a. m.</time><span>Salida</span></div>
+      </div>
+    </section>
+
+    <section class="section protocol">
+      <p class="eyebrow">Detalles</p>
+      <h2>Protocolo de vestuario</h2>
+      <p class="dress">Fiesta blanca</p>
+      <div class="small-details">
+        <p><strong>Niños:</strong> Dulces sueños</p>
+        <p><strong>Lluvia de sobres:</strong> 💌</p>
+      </div>
+    </section>
+
+    <section class="section song">
+      <p class="eyebrow">Mi canción</p>
+      <h2>De la mano</h2>
+      <p>Una canción especial para una noche inolvidable.</p>
+      <button class="music-btn" id="musicBtn">▶ Reproducir música</button>
+      <audio id="music" loop>
+        <!-- Coloca aquí tu archivo: assets/cancion.mp3 -->
+        <source src="assets/cancion.mp3" type="audio/mpeg">
+      </audio>
+      <p class="hint">La música se agregará cuando pongas el archivo MP3 en la carpeta <b>assets</b>.</p>
+    </section>
+
+    <section class="section rsvp">
+      <p class="eyebrow">Tu presencia es muy importante</p>
+      <h2>¿Nos acompañas?</h2>
+      <p>Confirma tu asistencia para que podamos esperarte.</p>
+      <a class="rsvp-btn" href="#" id="rsvpBtn">Confirmar asistencia por WhatsApp</a>
+      <p class="hint">Después reemplazaremos el enlace por el número de WhatsApp de la familia.</p>
+    </section>
+
+    <footer>
+      <p>Con cariño, Daniela y familia ✨</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
