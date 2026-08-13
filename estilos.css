@@ -172,3 +172,19 @@ footer h2{font-size:72px}
  .mini-flap{border-left-width:77px;border-right-width:77px;border-top-width:51px}
  .mini-seal{top:43px}
 }
+
+/* ===== V9: illustrated luxury itinerary assets ===== */
+.timeline-art img{
+  width:132px;height:100px;object-fit:contain;
+  mix-blend-mode:multiply;
+  border-radius:12px;
+  transition:transform .55s cubic-bezier(.2,.8,.25,1),filter .55s ease,box-shadow .55s ease;
+}
+.timeline-item:hover .timeline-art img{
+  transform:scale(1.075) translateY(-5px);
+  filter:drop-shadow(0 10px 12px rgba(185,146,67,.28));
+}
+.timeline-art:after{transition:width .5s ease,background .5s ease}
+@media(max-width:650px){
+ .timeline-art img{width:95px;height:78px}
+}
