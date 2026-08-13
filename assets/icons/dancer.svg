@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 170"><g fill="none" stroke="#c9a24b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="90" cy="28" r="14" fill="#fffaf0"/><path d="M90 44c-4 19-8 31-4 46"/><path d="M86 53c-23 2-35-9-43-18M89 54c18-3 30-14 39-25"/><path d="M86 89c-17 17-30 32-38 53M86 90c18 12 35 27 47 48"/><path d="M48 142c-12 7-24 9-34 8M133 138c14 8 27 10 37 7"/><path d="M61 67c11 20 20 25 29 26 13 2 26-7 31-28" fill="#fffaf0"/></g><path d="M28 112c22-15 49-16 65 1 18-17 45-16 65-1" fill="none" stroke="#4a817b" stroke-width="4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180">
+<g fill="none" stroke="#b9913c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="83" cy="35" r="15" fill="#fffdf5"/><circle cx="139" cy="35" r="15" fill="#dff7f2"/>
+<path d="M83 51c-8 21-13 39-18 62M139 51c6 22 12 40 18 61"/>
+<path d="M73 64l-35-24M91 64l38-25M130 64l-35-24M148 64l38-25"/>
+<path d="M65 112c-11 24-24 36-42 43M151 111c13 23 27 34 48 40"/>
+<path d="M59 83c21 14 44 14 62 0"/>
+<path d="M52 104c23 15 52 15 76 0"/>
+</g><g fill="#d8b95f"><path d="M111 17l4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1z"/></g>
+</svg>
