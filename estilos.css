@@ -63,3 +63,24 @@ footer{text-align:center;padding:75px 20px 35px}footer h2{font:500 60px "Cormora
  .protocol-mini img{width:85px;height:65px}
  .protocol-mini span{font-size:17px}
 }
+
+/* V5 refinements */
+.daniela-script{font-family:"Great Vibes","Cormorant Garamond",cursive!important;font-weight:400!important;letter-spacing:.02em}
+.reception-place{display:flex;flex-direction:column;align-items:center;gap:7px;margin:10px 0 28px}
+.reception-place .place-icon{font-size:38px;color:var(--gold)}
+.reception-place strong{font:600 31px "Cormorant Garamond";color:var(--gold)}
+.reception-place span{font:600 28px "Cormorant Garamond";color:var(--deep)}
+.reception-place small{font-size:10px;letter-spacing:.08em}
+.timeline-list.illustrated>div{align-items:center;transition:transform .35s ease,background .35s ease;border-radius:16px;padding:15px 10px}
+.timeline-list.illustrated>div:hover{transform:translateX(7px);background:rgba(201,162,75,.07)}
+.timeline-list.illustrated p{display:grid;grid-template-columns:76px 1fr;align-items:center;column-gap:13px}
+.timeline-list.illustrated img{width:68px;height:58px;object-fit:contain;transition:transform .35s ease,filter .35s ease}
+.timeline-list.illustrated>div:hover img{transform:scale(1.13) rotate(-3deg);filter:drop-shadow(0 6px 7px rgba(180,140,50,.2))}
+.timeline-list.illustrated strong{display:block}
+.protocol-mini>div{transition:transform .35s ease}.protocol-mini>div:hover{transform:translateY(-4px)}
+.music{position:relative}.music-btn{min-width:160px}
+@media(max-width:650px){
+ .reception-place span{font-size:23px}
+ .timeline-list.illustrated p{grid-template-columns:62px 1fr;column-gap:8px}
+ .timeline-list.illustrated img{width:56px;height:50px}
+}
