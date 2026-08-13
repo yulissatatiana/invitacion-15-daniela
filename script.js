@@ -1,58 +1,17 @@
-const target = new Date('2026-10-03T20:00:00-05:00').getTime();
+const EVENT_DATE="2026-10-03T20:00:00-05:00";
+const openBtn=document.getElementById("openBtn"),opening=document.getElementById("opening"),page=document.getElementById("page");
+openBtn.addEventListener("click",()=>{document.getElementById("envelope").classList.add("open");opening.classList.add("closed");page.classList.add("show");setTimeout(()=>document.querySelector(".intro")?.scrollIntoView({behavior:"smooth"}),550);});
 
-function updateCountdown(){
-  const now = Date.now();
-  let distance = target - now;
-  const message = document.getElementById('countdownMessage');
+const pad=n=>String(n).padStart(2,"0");
+function updateCountdown(){let d=new Date(EVENT_DATE).getTime()-Date.now();
+if(d<=0){["days","hours","minutes","seconds"].forEach(x=>document.getElementById(x).textContent="00");document.querySelector(".countdown-card h2").textContent="¡Hoy es el gran día!";return}
+let s=Math.floor(d/1000),days=Math.floor(s/86400),hours=Math.floor(s%86400/3600),mins=Math.floor(s%3600/60),secs=s%60;
+days=pad(days);document.getElementById("days").textContent=days;document.getElementById("hours").textContent=pad(hours);document.getElementById("minutes").textContent=pad(mins);document.getElementById("seconds").textContent=pad(secs);}
+updateCountdown();setInterval(updateCountdown,1000);
 
-  if(distance <= 0){
-    document.getElementById('days').textContent='00';
-    document.getElementById('hours').textContent='00';
-    document.getElementById('minutes').textContent='00';
-    document.getElementById('seconds').textContent='00';
-    message.textContent='¡Hoy es el gran día! ✨';
-    return;
-  }
-  const days = Math.floor(distance / 86400000);
-  distance %= 86400000;
-  const hours = Math.floor(distance / 3600000);
-  distance %= 3600000;
-  const minutes = Math.floor(distance / 60000);
-  const seconds = Math.floor((distance % 60000) / 1000);
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
 
-  document.getElementById('days').textContent=String(days).padStart(2,'0');
-  document.getElementById('hours').textContent=String(hours).padStart(2,'0');
-  document.getElementById('minutes').textContent=String(minutes).padStart(2,'0');
-  document.getElementById('seconds').textContent=String(seconds).padStart(2,'0');
-}
-updateCountdown();
-setInterval(updateCountdown,1000);
-
-document.getElementById('openInvitation').addEventListener('click',()=>{
-  document.getElementById('invitacion').scrollIntoView({behavior:'smooth'});
-});
-
-const music=document.getElementById('music');
-const musicBtn=document.getElementById('musicBtn');
-musicBtn.addEventListener('click',async()=>{
-  try{
-    if(music.paused){
-      await music.play();
-      musicBtn.textContent='❚❚ Pausar música';
-    }else{
-      music.pause();
-      musicBtn.textContent='▶ Reproducir música';
-    }
-  }catch(e){
-    musicBtn.textContent='Añade el archivo MP3 para activar la música';
-  }
-});
-
-// Reemplaza 573XXXXXXXXX por el número de WhatsApp, sin + ni espacios.
-document.getElementById('rsvpBtn').addEventListener('click',(e)=>{
-  e.preventDefault();
-  const phone='573XXXXXXXXX';
-  const text=encodeURIComponent('Hola, quiero confirmar mi asistencia a los 15 años de Daniela. ✨');
-  if(!phone.includes('X')) window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
-  else alert('Primero reemplaza el número de WhatsApp en script.js.');
-});
+const audio=document.getElementById("music"),btn=document.getElementById("musicBtn");
+audio.src="assets/musica.mp3";
+btn.addEventListener("click",()=>{if(audio.paused){audio.play().then(()=>btn.textContent="❚❚ Pausar").catch(()=>alert("Para activar la música, sube el archivo de la canción como assets/musica.mp3."));}else{audio.pause();btn.textContent="▶ Reproducir";}});
