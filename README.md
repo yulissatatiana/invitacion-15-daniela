@@ -1,14 +1,20 @@
-# Invitación web — Daniela, Mis 15 Años
+# Invitación web — Daniela · Mis 15 Años
 
-Archivos:
-- index.html: contenido de la invitación
-- styles.css: diseño
-- script.js: contador, botones y música
-- assets/fondo.png: fondo proporcionado
+Proyecto listo para subir a GitHub Pages en un solo commit.
 
-Fecha del evento: 3 de octubre de 2026, 8:00 p. m. (Colombia).
+## Contiene
+- Fondo marmoleado y diseño aqua/dorado.
+- Sobre de apertura interactivo.
+- Tipografía elegante estilo V3/V4 (Great Vibes + Cormorant Garamond).
+- Sección musical antes de la cuenta regresiva.
+- Canción: A Whole New World — violin cover.
+- Cuenta regresiva al 03/10/2026 8:00 p. m.
+- Recepción: Club Caza Pesca y Tiro, Salón 2.º piso.
+- Itinerario con seis ilustraciones SVG doradas transparentes.
+- Protocolo con ilustraciones SVG doradas transparentes.
+- Sobre interactivo para el detalle especial.
+- Galería de 4 fotos con ampliación al tocar/click.
+- Sin sección de confirmación de asistencia.
 
-Antes de publicar:
-1. Reemplazar el número de WhatsApp en script.js.
-2. Añadir assets/cancion.mp3 si se desea música.
-3. Añadir fotos en assets/ y las referencias correspondientes en index.html.
+## Subida
+Reemplaza el contenido del repositorio con el contenido de esta carpeta y haz un único commit.

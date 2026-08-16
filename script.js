@@ -70,3 +70,19 @@ if(specialEnvelope && specialReveal){
     specialReveal.setAttribute("aria-hidden",String(!isOpen));
   });
 }
+
+
+// Gallery lightbox
+const lightbox=document.getElementById("lightbox");
+const lightboxImg=document.getElementById("lightboxImg");
+const lightboxClose=document.getElementById("lightboxClose");
+document.querySelectorAll(".gallery-photo").forEach(btn=>btn.addEventListener("click",()=>{
+  lightboxImg.src=btn.dataset.full;
+  lightboxImg.alt=btn.querySelector("img")?.alt||"Foto de Daniela";
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden","false");
+}));
+function closeLightbox(){lightbox?.classList.remove("open");lightbox?.setAttribute("aria-hidden","true");}
+lightboxClose?.addEventListener("click",closeLightbox);
+lightbox?.addEventListener("click",e=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox()});
