@@ -1,800 +1,812 @@
 <!doctype html>
-
 <html lang="es">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="utf-8">
+  <meta name="theme-color" content="#bff3ed">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniela · Mis 15 Años</title>
 
-<meta name="theme-color" content="#bff3ed">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<title>Daniela · Mis 15 Años</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="estilos.css">
-
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 
 <body>
 
+  <!-- ============================= -->
+  <!-- SOBRE DE APERTURA -->
+  <!-- ============================= -->
 
-<!-- SOBRE DE APERTURA -->
+  <div class="opening" id="opening">
 
-<div class="opening" id="opening">
+    <div class="sparkles"></div>
 
-<div class="sparkles"></div>
+    <div class="envelope-wrap">
 
-<div class="envelope-wrap">
+      <div class="floral-corner top-left"></div>
+      <div class="floral-corner top-right"></div>
 
-<div class="floral-corner top-left"></div>
+      <div class="envelope" id="envelope">
 
-<div class="floral-corner top-right"></div>
+        <div class="envelope-flap"></div>
 
+        <div class="wax">D</div>
 
-<div class="envelope" id="envelope">
+        <div class="envelope-name">
+          Daniela
+        </div>
 
-<div class="envelope-flap"></div>
+      </div>
 
-<div class="wax">D</div>
+    </div>
 
-<div class="envelope-name">Daniela</div>
+    <p class="open-label">
+      Mis 15 Años
+    </p>
 
-</div>
+    <button class="lux-btn" id="openBtn">
+      Abrir invitación <span></span>
+    </button>
 
-</div>
+  </div>
 
 
-<p class="open-label">Mis 15 Años</p>
+  <!-- ============================= -->
+  <!-- INVITACIÓN -->
+  <!-- ============================= -->
 
-<button class="lux-btn" id="openBtn">
+  <main id="page" class="page">
 
-Abrir invitación <span></span>
 
-</button>
+    <!-- ============================= -->
+    <!-- PORTADA -->
+    <!-- ============================= -->
 
-</div>
+    <section class="hero">
 
+      <div class="frame">
 
+        <div class="corner c1"></div>
+        <div class="corner c2"></div>
+        <div class="corner c3"></div>
+        <div class="corner c4"></div>
 
-<!-- INVITACIÓN -->
+        <p class="eyebrow">
+          UNA NOCHE PARA RECORDAR
+        </p>
 
-<main id="page" class="page">
+        <h1 class="daniela-script">
+          Daniela
+        </h1>
 
+        <div class="gold-rule"></div>
 
-<!-- PORTADA -->
+        <p class="fifteen">
+          Mis <span>15</span> Años
+        </p>
 
-<section class="hero">
+        <p class="hero-date">
+          03 · 10 · 2026
+        </p>
 
-<div class="frame">
+        <p class="hero-time">
+          SÁBADO · 8:00 P. M.
+        </p>
 
-<div class="corner c1"></div>
+        <div class="scroll-note">
+          Desliza para descubrir
+        </div>
 
-<div class="corner c2"></div>
+      </div>
 
-<div class="corner c3"></div>
+    </section>
 
-<div class="corner c4"></div>
 
 
-<p class="eyebrow">UNA NOCHE PARA RECORDAR</p>
+    <div class="content">
 
-<h1 class="daniela-script">Daniela</h1>
 
-<div class="gold-rule"></div>
+      <!-- ============================= -->
+      <!-- MENSAJE -->
+      <!-- ============================= -->
 
-<p class="fifteen">Mis <span>15</span> Años</p>
+      <section class="card reveal">
 
-<p class="hero-date">03 · 10 · 2026</p>
+        <div class="flower"></div>
 
-<p class="hero-time">SÁBADO · 8:00 P. M.</p>
+        <p class="eyebrow">
+          CON MUCHO AMOR
+        </p>
 
-<div class="scroll-note">Desliza para descubrir</div>
+        <h2>
+          Quiero compartir<br>
+          este momento contigo
+        </h2>
 
-</div>
+        <p class="message">
+          Le doy gracias a Dios y a mis padres por concederme
+          la ilusión más grande de mi vida, y a ustedes, por
+          compartir conmigo este día tan especial e inolvidable.
+        </p>
 
-</section>
+        <div class="signature">
+          Daniela
+        </div>
 
+      </section>
 
 
-<div class="content">
 
+      <!-- ============================= -->
+      <!-- MÚSICA -->
+      <!-- ============================= -->
 
-<!-- MENSAJE -->
+      <section class="card reveal music">
 
-<section class="card reveal">
+        <h2>
+          Mi canción
+        </h2>
 
-<div class="flower"></div>
+        <button class="music-btn" id="musicBtn">
+          ▶ Reproducir
+        </button>
 
-<p class="eyebrow">CON MUCHO AMOR</p>
+        <audio
+          id="music"
+          preload="none"
+        ></audio>
 
-<h2>
+      </section>
 
-Quiero compartir<br>
 
-este momento contigo
 
-</h2>
+      <!-- ============================= -->
+      <!-- CUENTA REGRESIVA -->
+      <!-- ============================= -->
 
+      <section class="card countdown-card reveal">
 
-<p class="message">
+        <p class="eyebrow">
+          FALTA MUY POCO
+        </p>
 
-Le doy gracias a Dios y a mis padres por concederme la ilusión más grande de mi vida, y a ustedes, por compartir conmigo este día tan especial e inolvidable.
+        <h2>
+          La cuenta regresiva
+        </h2>
 
-</p>
+        <div class="timer">
 
+          <div>
+            <strong id="days">00</strong>
+            <span>DÍAS</span>
+          </div>
 
-<div class="signature">Daniela</div>
+          <i>:</i>
 
-</section>
+          <div>
+            <strong id="hours">00</strong>
+            <span>HORAS</span>
+          </div>
 
+          <i>:</i>
 
+          <div>
+            <strong id="minutes">00</strong>
+            <span>MINUTOS</span>
+          </div>
 
-<!-- MÚSICA -->
+          <i>:</i>
 
-<section class="card reveal music">
+          <div>
+            <strong id="seconds">00</strong>
+            <span>SEGUNDOS</span>
+          </div>
 
-<h2>Mi canción</h2>
+        </div>
 
-<button class="music-btn" id="musicBtn">
+      </section>
 
-▶ Reproducir
 
-</button>
 
-<audio id="music" preload="none"></audio>
+      <!-- ============================= -->
+      <!-- GRAN DÍA -->
+      <!-- ============================= -->
 
-</section>
+      <section class="card reveal details">
 
+        <p class="eyebrow">
+          EL GRAN DÍA
+        </p>
 
+        <h2>
+          Recepción
+        </h2>
 
-<!-- CUENTA REGRESIVA -->
+        <div class="reception-place">
 
-<section class="card countdown-card reveal">
+          <strong>
+            Club Caza Pesca y Tiro
+          </strong>
 
-<p class="eyebrow">FALTA MUY POCO</p>
+          <small>
+            Salón 2.º piso
+          </small>
 
-<h2>La cuenta regresiva</h2>
+        </div>
 
+        <a
+          class="gold-btn"
+          href="https://www.google.com/maps/search/?api=1&query=Club+Caza+Pesca+y+Tiro"
+          target="_blank"
+          rel="noopener"
+        >
+          Cómo llegar
+        </a>
 
-<div class="timer">
+      </section>
 
-<div>
 
-<strong id="days">00</strong>
 
-<span>DÍAS</span>
+      <!-- ============================= -->
+      <!-- ITINERARIO -->
+      <!-- ============================= -->
 
-</div>
+      <section class="card reveal timeline">
 
-<i>:</i>
+        <p class="eyebrow">
+          ITINERARIO
+        </p>
 
+        <h2>
+          Una noche para recordar
+        </h2>
 
-<div>
+        <div class="timeline-list illustrated">
 
-<strong id="hours">00</strong>
 
-<span>HORAS</span>
+          <!-- LLEGADA -->
 
-</div>
+          <div class="timeline-item">
 
-<i>:</i>
+            <time>
+              8:00 p. m.
+            </time>
 
+            <b></b>
 
-<div>
+            <p>
 
-<strong id="minutes">00</strong>
+              <img
+                src="assets/icons/llegada.png"
+                alt="Invitados"
+              >
 
-<span>MINUTOS</span>
+              <strong>
+                Llegada de los invitados
+              </strong>
 
-</div>
+            </p>
 
-<i>:</i>
+          </div>
 
 
-<div>
 
-<strong id="seconds">00</strong>
+          <!-- FOTOGRAFÍA -->
 
-<span>SEGUNDOS</span>
+          <div class="timeline-item">
 
-</div>
+            <time>
+              9:00 p. m.
+            </time>
 
-</div>
+            <b></b>
 
-</section>
+            <p>
 
+              <img
+                src="assets/icons/fotografia.png"
+                alt="Cámara"
+              >
 
+              <strong>
+                Fotografía
+              </strong>
 
-<!-- RECEPCIÓN -->
+            </p>
 
-<section class="card reveal details">
+          </div>
 
-<p class="eyebrow">EL GRAN DÍA</p>
 
-<h2>Recepción</h2>
 
+          <!-- BRINDIS -->
 
-<div class="reception-place">
+          <div class="timeline-item">
 
-<strong>Club Caza Pesca y Tiro</strong>
+            <time>
+              9:45 p. m.
+            </time>
 
-<small>Salón 2.º piso</small>
+            <b></b>
 
-</div>
+            <p>
 
+              <img
+                src="assets/icons/brindis.png"
+                alt="Copas"
+              >
 
-<a
+              <strong>
+                Brindis
+              </strong>
 
-class="gold-btn"
+            </p>
 
-href="https://www.google.com/maps/search/?api=1&query=Club+Caza+Pesca+y+Tiro"
+          </div>
 
-target="_blank"
 
-rel="noopener"
 
->
+          <!-- CENA -->
 
-Cómo llegar
+          <div class="timeline-item">
 
-</a>
+            <time>
+              10:00 p. m.
+            </time>
 
-</section>
+            <b></b>
 
+            <p>
 
+              <img
+                src="assets/icons/cena.png"
+                alt="Cena"
+              >
 
-<!-- ITINERARIO -->
+              <strong>
+                Cena
+              </strong>
 
-<section class="card reveal timeline">
+            </p>
 
-<p class="eyebrow">ITINERARIO</p>
+          </div>
 
-<h2>Una noche para recordar</h2>
 
 
-<div class="timeline-list illustrated">
+          <!-- FIESTA -->
 
+          <div class="timeline-item">
 
-<div class="timeline-item">
+            <time>
+              11:00 p. m.
+            </time>
 
-<time>8:00 p. m.</time>
+            <b></b>
 
-<b></b>
+            <p>
 
-<p>
+              <img
+                src="assets/icons/fiesta.png"
+                alt="Pareja bailando"
+              >
 
-<img
+              <strong>
+                Fiesta
+              </strong>
 
-src="assets/icons/llegada.png"
+            </p>
 
-alt="Invitados"
+          </div>
 
->
 
-<strong>Llegada de los invitados</strong>
 
-</p>
+          <!-- SALIDA -->
 
-</div>
+          <div class="timeline-item">
 
+            <time>
+              3:00 a. m.
+            </time>
 
+            <b></b>
 
-<div class="timeline-item">
+            <p>
 
-<time>9:00 p. m.</time>
+              <img
+                src="assets/icons/salida.png"
+                alt="Luna"
+              >
 
-<b></b>
+              <strong>
+                Salida
+              </strong>
 
-<p>
+            </p>
 
-<img
+          </div>
 
-src="assets/icons/fotografia.png"
 
-alt="Cámara"
+        </div>
 
->
+      </section>
 
-<strong>Fotografía</strong>
 
-</p>
 
-</div>
+      <!-- ============================= -->
+      <!-- PROTOCOLO -->
+      <!-- ============================= -->
 
+      <section class="card reveal protocol">
 
+        <p class="eyebrow">
+          PROTOCOLO
+        </p>
 
-<div class="timeline-item">
+        <h2>
+          Fiesta Blanca
+        </h2>
 
-<time>9:45 p. m.</time>
 
-<b></b>
+        <!-- VESTUARIO PRIMERO -->
 
-<p>
+        <div class="protocol-art">
 
-<img
+          <img
+            src="assets/icons/vestuario.png"
+            alt="Personas vestidas de blanco"
+          >
 
-src="assets/icons/brindis.png"
+        </div>
 
-alt="Copas"
 
->
+        <p>
+          Una noche en blanco, llena de luz,
+          elegancia y magia.
+        </p>
 
-<strong>Brindis</strong>
 
-</p>
+        <div class="protocol-mini">
 
-</div>
 
+          <!-- VESTUARIO -->
 
+          <div>
 
-<div class="timeline-item">
+            <img
+              src="assets/icons/vestuario.png"
+              alt="Vestuario blanco"
+            >
 
-<time>10:00 p. m.</time>
+            <span>
 
-<b></b>
+              <strong>
+                Vestuario
+              </strong>
 
-<p>
+              <br>
 
-<img
+              Blanco
 
-src="assets/icons/cena.png"
+            </span>
 
-alt="Cena"
+          </div>
 
->
 
-<strong>Cena</strong>
 
-</p>
+          <!-- DULCES SUEÑOS -->
 
-</div>
+          <div>
 
+            <img
+              src="assets/icons/dulces-suenos.png"
+              alt="Bebé durmiendo"
+            >
 
+            <span>
 
-<div class="timeline-item">
+              <strong>
+                Dulces sueños
+              </strong>
 
-<time>11:00 p. m.</time>
+              <br>
 
-<b></b>
+              Para los más pequeños.
 
-<p>
+            </span>
 
-<img
+          </div>
 
-src="assets/icons/fiesta.png"
 
-alt="Pareja bailando"
+        </div>
 
->
+      </section>
 
-<strong>Fiesta</strong>
 
-</p>
 
-</div>
+      <!-- ============================= -->
+      <!-- GALERÍA -->
+      <!-- ============================= -->
 
+      <section class="card reveal gallery">
 
+        <p class="eyebrow">
+          RECUERDOS DE DANIELA
+        </p>
 
-<div class="timeline-item">
+        <h2>
+          Desde pequeña
+        </h2>
 
-<time>3:00 a. m.</time>
+        <p class="gallery-intro">
+          Cada etapa, cada sonrisa y cada recuerdo forman
+          parte de la historia que hoy celebramos.
+        </p>
 
-<b></b>
 
-<p>
+        <div
+          class="photo-gallery"
+          id="photoGallery"
+        >
 
-<img
 
-src="assets/icons/salida.png"
+          <!-- 1. RECIÉN NACIDA -->
 
-alt="Luna"
+          <button
+            class="gallery-photo"
+            data-full="assets/fotos/daniela-bebe.jpg"
+          >
 
->
+            <img
+              src="assets/fotos/daniela-bebe.jpg"
+              alt="Daniela recién nacida"
+            >
 
-<strong>Salida</strong>
+            <span>
+              Un comienzo lleno de amor
+            </span>
 
-</p>
+          </button>
 
-</div>
 
 
-</div>
+          <!-- 2. CHAQUETA ROJA -->
 
-</section>
+          <button
+            class="gallery-photo"
+            data-full="assets/fotos/daniela-chaqueta.jpg"
+          >
 
+            <img
+              src="assets/fotos/daniela-chaqueta.jpg"
+              alt="Daniela con chaqueta roja"
+            >
 
+            <span>
+              Una sonrisa inolvidable
+            </span>
 
-<!-- PROTOCOLO -->
+          </button>
 
-<section class="card reveal protocol">
 
-<p class="eyebrow">PROTOCOLO</p>
 
-<h2>Fiesta Blanca</h2>
+          <!-- 3. VESTIDO BLANCO -->
 
+          <button
+            class="gallery-photo"
+            data-full="assets/fotos/daniela-vestido-blanco.jpg"
+          >
 
-<div class="protocol-art">
+            <img
+              src="assets/fotos/daniela-vestido-blanco.jpg"
+              alt="Daniela con vestido blanco"
+            >
 
-<img
+            <span>
+              Pequeña princesa
+            </span>
 
-src="assets/icons/vestuario.png"
+          </button>
 
-alt="Personas vestidas de blanco"
 
->
 
-</div>
+          <!-- 4. VESTIDO ROJO DE PRINCESA -->
 
+          <button
+            class="gallery-photo"
+            data-full="assets/fotos/daniela-princesa.jpg"
+          >
 
-<p>
+            <img
+              src="assets/fotos/daniela-princesa.jpg"
+              alt="Daniela con vestido rojo de princesa"
+            >
 
-Una noche en blanco, llena de luz, elegancia y magia.
+            <span>
+              Momentos que quedan para siempre
+            </span>
 
-</p>
+          </button>
 
 
-<div class="protocol-mini">
+        </div>
 
 
-<div>
 
-<img
+        <!-- LIGHTBOX -->
 
-src="assets/icons/dulces-suenos.png"
+        <div
+          class="lightbox"
+          id="lightbox"
+          aria-hidden="true"
+        >
 
-alt="Bebé durmiendo"
+          <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
 
->
+          <img
+            id="lightboxImg"
+            src=""
+            alt=""
+          >
 
-<span>
+        </div>
 
-<strong>Dulces sueños</strong><br>
+      </section>
 
-Para los más pequeños.
 
-</span>
 
-</div>
+      <!-- ================================================= -->
+      <!-- LLUVIA DE SOBRES — ANTES DE CONFIRMAR ASISTENCIA -->
+      <!-- ================================================= -->
 
+      <section class="card reveal special">
 
+        <p class="eyebrow">
+          UN DETALLE ESPECIAL
+        </p>
 
-<div>
+        <h2>
+          Tu presencia es mi mejor regalo
+        </h2>
 
-<img
+        <p>
+          El detalle especial de esta celebración será mediante
+          <b>lluvia de sobres</b>.
+        </p>
 
-src="assets/icons/vestuario.png"
 
-alt="Vestuario blanco"
+        <button
+          class="special-envelope"
+          id="specialEnvelope"
+          aria-expanded="false"
+          aria-label="Abrir detalle especial"
+        >
 
->
+          <span class="mini-envelope">
 
-<span>
+            <span class="mini-flap"></span>
 
-<strong>Vestuario</strong><br>
+            <span class="mini-seal">
+              D
+            </span>
 
-Blanco
+          </span>
 
-</span>
+          <span class="tap-note">
+            Abrir detalle
+          </span>
 
-</div>
+        </button>
 
 
-</div>
+        <div
+          class="special-reveal"
+          id="specialReveal"
+          aria-hidden="true"
+        >
 
-</section>
+          <span></span>
 
+          <strong>
+            Un detalle desde el corazón
+          </strong>
 
+          <p>
+            Gracias por ser parte de una noche
+            tan especial para Daniela.
+          </p>
 
-<!-- GALERÍA -->
+        </div>
 
-<section class="card reveal gallery">
+      </section>
 
-<p class="eyebrow">RECUERDOS DE DANIELA</p>
 
-<h2>Desde pequeña</h2>
 
+      <!-- ================================================= -->
+      <!-- CONFIRMAR ASISTENCIA — ÚLTIMA SECCIÓN -->
+      <!-- ================================================= -->
 
-<p class="gallery-intro">
+      <section class="card reveal rsvp">
 
-Cada etapa, cada sonrisa y cada recuerdo forman parte de la historia que hoy celebramos.
+        <p class="eyebrow">
+          CONFIRMAR ASISTENCIA
+        </p>
 
-</p>
+        <h2>
+          Te esperamos
+        </h2>
 
+        <p>
+          Confirma tu asistencia para acompañar a Daniela
+          en esta noche tan especial.
+        </p>
 
-<div class="photo-gallery" id="photoGallery">
 
+        <a
+          class="gold-btn"
+          href="https://wa.me/573188479061?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20a%20los%2015%20a%C3%B1os%20de%20Daniela."
+          target="_blank"
+          rel="noopener"
+        >
+          Confirmar por WhatsApp
+        </a>
 
-<!-- 1. RECIÉN NACIDA -->
+      </section>
 
-<button
 
-class="gallery-photo"
+    </div>
 
-data-full="assets/fotos/daniela-bebe.jpg"
 
->
 
-<img
+    <!-- ============================= -->
+    <!-- FINAL -->
+    <!-- ============================= -->
 
-src="assets/fotos/daniela-bebe.jpg"
+    <footer>
 
-alt="Daniela recién nacida"
+      <div class="gold-rule"></div>
 
->
+      <p>
+        Te esperamos con mucho cariño
+      </p>
 
-<span>Un comienzo lleno de amor</span>
+      <h2 class="daniela-script">
+        Daniela
+      </h2>
 
-</button>
+      <p class="footer-date">
+        03 · 10 · 2026
+      </p>
 
 
+      <button
+        onclick="window.scrollTo({top:0,behavior:'smooth'})"
+      >
+        Volver al inicio ↑
+      </button>
 
-<!-- 2. CHAQUETA ROJA -->
+    </footer>
 
-<button
 
-class="gallery-photo"
+  </main>
 
-data-full="assets/fotos/daniela-chaqueta.jpg"
 
->
 
-<img
-
-src="assets/fotos/daniela-chaqueta.jpg"
-
-alt="Daniela con chaqueta roja"
-
->
-
-<span>Una sonrisa inolvidable</span>
-
-</button>
-
-
-
-<!-- 3. VESTIDO BLANCO -->
-
-<button
-
-class="gallery-photo"
-
-data-full="assets/fotos/daniela-vestido-blanco.jpg"
-
->
-
-<img
-
-src="assets/fotos/daniela-vestido-blanco.jpg"
-
-alt="Daniela con vestido blanco"
-
->
-
-<span>Pequeña princesa</span>
-
-</button>
-
-
-
-<!-- 4. VESTIDO ROJO -->
-
-<button
-
-class="gallery-photo"
-
-data-full="assets/fotos/daniela-princesa.jpg"
-
->
-
-<img
-
-src="assets/fotos/daniela-princesa.jpg"
-
-alt="Daniela con vestido rojo de princesa"
-
->
-
-<span>Momentos que quedan para siempre</span>
-
-</button>
-
-
-</div>
-
-
-
-<!-- LIGHTBOX -->
-
-<div
-
-class="lightbox"
-
-id="lightbox"
-
-aria-hidden="true"
-
->
-
-<button
-
-class="lightbox-close"
-
-id="lightboxClose"
-
-aria-label="Cerrar"
-
->
-
-×
-
-</button>
-
-
-<img
-
-id="lightboxImg"
-
-src=""
-
-alt=""
-
->
-
-</div>
-
-
-</section>
-
-
-
-<!-- CONFIRMAR ASISTENCIA -->
-
-<section class="card reveal rsvp">
-
-<p class="eyebrow">CONFIRMAR ASISTENCIA</p>
-
-<h2>Te esperamos</h2>
-
-
-<p>
-
-Confirma tu asistencia para acompañar a Daniela en esta noche tan especial.
-
-</p>
-
-
-<a
-
-class="gold-btn"
-
-href="https://wa.me/573188479061?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20a%20los%2015%20a%C3%B1os%20de%20Daniela."
-
-target="_blank"
-
-rel="noopener"
-
->
-
-Confirmar por WhatsApp
-
-</a>
-
-</section>
-
-
-
-<!-- DETALLE ESPECIAL -->
-
-<section class="card reveal special">
-
-<p class="eyebrow">UN DETALLE ESPECIAL</p>
-
-<h2>Tu presencia es mi mejor regalo</h2>
-
-
-<p>
-
-El detalle especial de esta celebración será mediante <b>lluvia de sobres</b>.
-
-</p>
-
-
-<button
-
-class="special-envelope"
-
-id="specialEnvelope"
-
-aria-expanded="false"
-
-aria-label="Abrir detalle especial"
-
->
-
-<span class="mini-envelope">
-
-<span class="mini-flap"></span>
-
-<span class="mini-seal">D</span>
-
-</span>
-
-
-<span class="tap-note">Abrir detalle</span>
-
-</button>
-
-
-<div
-
-class="special-reveal"
-
-id="specialReveal"
-
-aria-hidden="true"
-
->
-
-<span></span>
-
-<strong>Un detalle desde el corazón</strong>
-
-<p>
-
-Gracias por ser parte de una noche tan especial para Daniela.
-
-</p>
-
-</div>
-
-
-</section>
-
-
-</div>
-
-
-
-<!-- PIE -->
-
-<footer>
-
-<div class="gold-rule"></div>
-
-<p>Te esperamos con mucho cariño</p>
-
-<h2 class="daniela-script">Daniela</h2>
-
-<p class="footer-date">03 · 10 · 2026</p>
-
-
-<button
-
-onclick="window.scrollTo({top:0,behavior:'smooth'})"
-
->
-
-Volver al inicio ↑
-
-</button>
-
-</footer>
-
-
-</main>
-
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 
 </body>
 
