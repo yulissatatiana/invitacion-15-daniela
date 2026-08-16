@@ -213,3 +213,44 @@ footer h2{font-size:72px}
 .lightbox img{max-width:min(900px,92vw);max-height:88vh;object-fit:contain;border:1px solid rgba(240,215,138,.8);padding:8px;background:#fff;border-radius:12px;box-shadow:0 25px 70px rgba(0,0,0,.35)}
 .lightbox-close{position:absolute;top:18px;right:22px;width:42px;height:42px;border:1px solid rgba(240,215,138,.7);border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:30px;line-height:1;cursor:pointer}
 @media(max-width:650px){.frame h1{font-size:clamp(84px,24vw,130px)}footer h2{font-size:60px}.timeline-list.illustrated p img{width:66px;height:62px}.protocol-art img{width:240px;height:160px}.protocol-mini img{width:80px;height:70px}.photo-gallery{grid-template-columns:1fr}.gallery-photo img{height:340px}}
+
+
+/* ===== FINAL PACKAGE POLISH ===== */
+.rsvp p:not(.eyebrow){
+  max-width:560px;
+  margin:0 auto 22px;
+  line-height:1.7;
+}
+.rsvp .gold-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.timeline-list.illustrated .timeline-item{
+  position:relative;
+}
+.timeline-list.illustrated .timeline-item::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:4px;
+  height:1px;
+  width:0;
+  margin:auto;
+  background:linear-gradient(90deg,transparent,rgba(201,162,75,.8),transparent);
+  transition:width .45s ease;
+}
+.timeline-list.illustrated .timeline-item:hover::after,
+.timeline-list.illustrated .timeline-item:focus-within::after{
+  width:72%;
+}
+.timeline-list.illustrated p img{
+  background:transparent !important;
+}
+.protocol-mini > div{
+  background:rgba(255,255,255,.34);
+}
+@media(max-width:650px){
+  .rsvp .gold-btn{width:min(100%,290px)}
+}

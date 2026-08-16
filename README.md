@@ -1,20 +1,34 @@
-# Invitación web — Daniela · Mis 15 Años
+# Invitación Daniela — paquete listo para GitHub
 
-Proyecto listo para subir a GitHub Pages en un solo commit.
+Este ZIP ya contiene el código y los recursos juntos.
 
-## Contiene
-- Fondo marmoleado y diseño aqua/dorado.
-- Sobre de apertura interactivo.
-- Tipografía elegante estilo V3/V4 (Great Vibes + Cormorant Garamond).
-- Sección musical antes de la cuenta regresiva.
-- Canción: A Whole New World — violin cover.
-- Cuenta regresiva al 03/10/2026 8:00 p. m.
-- Recepción: Club Caza Pesca y Tiro, Salón 2.º piso.
-- Itinerario con seis ilustraciones SVG doradas transparentes.
-- Protocolo con ilustraciones SVG doradas transparentes.
-- Sobre interactivo para el detalle especial.
-- Galería de 4 fotos con ampliación al tocar/click.
-- Sin sección de confirmación de asistencia.
+## Estructura
+- `index.html`
+- `estilos.css`
+- `script.js`
+- `assets/fondo.png`
+- `assets/musica.mp3`
+- `assets/icons/` → iconos nuevos, transparentes y elegantes
+- `assets/fotos/` → las 4 fotos en el orden solicitado
 
-## Subida
-Reemplaza el contenido del repositorio con el contenido de esta carpeta y haz un único commit.
+## Orden de la galería
+1. Daniela recién nacida
+2. Daniela con chaqueta roja
+3. Daniela con vestido blanco
+4. Daniela con vestido rojo de princesa
+
+## WhatsApp
+Confirmar asistencia: 318 847 9061.
+
+## Subir a GitHub
+1. Abre tu repositorio.
+2. Pulsa **Add file → Upload files**.
+3. Arrastra TODO el contenido de esta carpeta/ZIP (manteniendo la carpeta `assets`).
+4. Revisa que `assets/icons` y `assets/fotos` existan dentro del repositorio.
+5. Haz un único **Commit changes**.
+
+## Música
+La invitación ya trae `assets/musica.mp3`. Si quieres cambiarla después, reemplaza ese archivo conservando exactamente el nombre `musica.mp3`.
+
+## Importante
+No vuelvas a subir los iconos antiguos encima de los nuevos. Este paquete ya trae los SVG nuevos y el código apunta a ellos.

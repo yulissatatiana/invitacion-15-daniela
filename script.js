@@ -48,13 +48,13 @@ if(audio && musicBtn){
   musicBtn.addEventListener("click",()=>{
     if(audio.paused){
       audio.play().then(()=>{
-        musicBtn.textContent="❚❚ Pausar";
+        musicBtn.textContent="Pausar";
       }).catch(()=>{
-        musicBtn.textContent="▶ Reproducir";
+        musicBtn.textContent="Reproducir";
       });
     }else{
       audio.pause();
-      musicBtn.textContent="▶ Reproducir";
+      musicBtn.textContent="Reproducir";
     }
   });
   audio.addEventListener("ended",()=>musicBtn.textContent="▶ Reproducir");
